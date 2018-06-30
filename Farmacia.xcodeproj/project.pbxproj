@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C34DED8F20DD9A0B00B45325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DED8E20DD9A0B00B45325 /* AppDelegate.swift */; };
+		C34DED9420DD9A0B00B45325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34DED9220DD9A0B00B45325 /* Main.storyboard */; };
+		C34DED9620DD9A0C00B45325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34DED9520DD9A0C00B45325 /* Assets.xcassets */; };
+		C34DED9920DD9A0C00B45325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34DED9720DD9A0C00B45325 /* LaunchScreen.storyboard */; };
+		C34DEDA420DD9A0C00B45325 /* FarmaciaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DEDA320DD9A0C00B45325 /* FarmaciaTests.swift */; };
+		C34DEDAF20DD9A0C00B45325 /* FarmaciaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DEDAE20DD9A0C00B45325 /* FarmaciaUITests.swift */; };
+		C38748B720E5788B000ABB83 /* PharmacyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38748B620E5788B000ABB83 /* PharmacyCellViewModel.swift */; };
+		C3A14CFB20DD9D5E00F4182E /* Pharmacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14CFA20DD9D5E00F4182E /* Pharmacy.swift */; };
+		C3A14CFD20DD9DAE00F4182E /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14CFC20DD9DAE00F4182E /* UIUtilities.swift */; };
+		C3A14CFF20DD9DD500F4182E /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14CFE20DD9DD500F4182E /* UIConstants.swift */; };
+		C3A14D0120DD9E2300F4182E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3A14D0020DD9E2300F4182E /* Localizable.strings */; };
+		C3A14D0820DD9F3E00F4182E /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D0620DD9F3E00F4182E /* CartViewController.swift */; };
+		C3A14D0920DD9F3E00F4182E /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A14D0720DD9F3E00F4182E /* CartViewController.xib */; };
+		C3A14D0C20DD9F5100F4182E /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D0A20DD9F5100F4182E /* OrderConfirmationViewController.swift */; };
+		C3A14D0D20DD9F5100F4182E /* OrderConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A14D0B20DD9F5100F4182E /* OrderConfirmationViewController.xib */; };
+		C3A14D1020DD9F5F00F4182E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D0E20DD9F5F00F4182E /* SplashViewController.swift */; };
+		C3A14D1420DD9F6D00F4182E /* StoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D1220DD9F6D00F4182E /* StoreListViewController.swift */; };
+		C3A14D1520DD9F6D00F4182E /* StoreListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A14D1320DD9F6D00F4182E /* StoreListViewController.xib */; };
+		C3A14D1C20DDA00A00F4182E /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D1B20DDA00A00F4182E /* CartViewModel.swift */; };
+		C3A14D1E20DDA02000F4182E /* OrderConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D1D20DDA02000F4182E /* OrderConfirmationViewModel.swift */; };
+		C3A14D2020DDA02E00F4182E /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D1F20DDA02E00F4182E /* SplashViewModel.swift */; };
+		C3A14D2220DDA03900F4182E /* StoreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D2120DDA03900F4182E /* StoreListViewModel.swift */; };
+		C3A14D2520DDA1D700F4182E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D2420DDA1D700F4182E /* BaseViewController.swift */; };
+		C3A14D2720DDA23200F4182E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D2620DDA23200F4182E /* BaseViewModel.swift */; };
+		C3A14D2B20DDA50D00F4182E /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D2920DDA50D00F4182E /* PaymentMethodViewController.swift */; };
+		C3A14D2C20DDA50D00F4182E /* PaymentMethodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A14D2A20DDA50D00F4182E /* PaymentMethodViewController.xib */; };
+		C3A14D2F20DDA69900F4182E /* PaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A14D2E20DDA69900F4182E /* PaymentMethodViewModel.swift */; };
+		C3F1727320E44162004113AE /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F1727120E44162004113AE /* ButtonTableViewCell.swift */; };
+		C3F1727420E44162004113AE /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F1727220E44162004113AE /* ButtonTableViewCell.xib */; };
+		C3F1727620E44182004113AE /* ButtonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F1727520E44182004113AE /* ButtonCellViewModel.swift */; };
+		C3F1727820E44222004113AE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F1727720E44222004113AE /* BaseTableViewCell.swift */; };
+		C3F1727B20E44368004113AE /* PharmacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F1727920E44368004113AE /* PharmacyTableViewCell.swift */; };
+		C3F1727C20E44368004113AE /* PharmacyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F1727A20E44368004113AE /* PharmacyTableViewCell.xib */; };
+		C3F6F3B520E69073009D08E1 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6F3B320E69073009D08E1 /* CartTableViewCell.swift */; };
+		C3F6F3B620E69073009D08E1 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F6F3B420E69073009D08E1 /* CartTableViewCell.xib */; };
+		C3F6F3B820E69A81009D08E1 /* CartCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6F3B720E69A81009D08E1 /* CartCellViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C34DEDA020DD9A0C00B45325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C34DED8320DD9A0B00B45325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C34DED8A20DD9A0B00B45325;
+			remoteInfo = Farmacia;
+		};
+		C34DEDAB20DD9A0C00B45325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C34DED8320DD9A0B00B45325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C34DED8A20DD9A0B00B45325;
+			remoteInfo = Farmacia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C34DED8B20DD9A0B00B45325 /* Farmacia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farmacia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34DED8E20DD9A0B00B45325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C34DED9320DD9A0B00B45325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C34DED9520DD9A0C00B45325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C34DED9820DD9A0C00B45325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C34DED9A20DD9A0C00B45325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34DED9F20DD9A0C00B45325 /* FarmaciaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmaciaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34DEDA320DD9A0C00B45325 /* FarmaciaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmaciaTests.swift; sourceTree = "<group>"; };
+		C34DEDA520DD9A0C00B45325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34DEDAA20DD9A0C00B45325 /* FarmaciaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmaciaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34DEDAE20DD9A0C00B45325 /* FarmaciaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmaciaUITests.swift; sourceTree = "<group>"; };
+		C34DEDB020DD9A0C00B45325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C38748B620E5788B000ABB83 /* PharmacyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyCellViewModel.swift; sourceTree = "<group>"; };
+		C3A14CFA20DD9D5E00F4182E /* Pharmacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharmacy.swift; sourceTree = "<group>"; };
+		C3A14CFC20DD9DAE00F4182E /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
+		C3A14CFE20DD9DD500F4182E /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		C3A14D0020DD9E2300F4182E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C3A14D0620DD9F3E00F4182E /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		C3A14D0720DD9F3E00F4182E /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		C3A14D0A20DD9F5100F4182E /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
+		C3A14D0B20DD9F5100F4182E /* OrderConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderConfirmationViewController.xib; sourceTree = "<group>"; };
+		C3A14D0E20DD9F5F00F4182E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		C3A14D1220DD9F6D00F4182E /* StoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListViewController.swift; sourceTree = "<group>"; };
+		C3A14D1320DD9F6D00F4182E /* StoreListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreListViewController.xib; sourceTree = "<group>"; };
+		C3A14D1B20DDA00A00F4182E /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		C3A14D1D20DDA02000F4182E /* OrderConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewModel.swift; sourceTree = "<group>"; };
+		C3A14D1F20DDA02E00F4182E /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		C3A14D2120DDA03900F4182E /* StoreListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListViewModel.swift; sourceTree = "<group>"; };
+		C3A14D2420DDA1D700F4182E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C3A14D2620DDA23200F4182E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		C3A14D2920DDA50D00F4182E /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
+		C3A14D2A20DDA50D00F4182E /* PaymentMethodViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodViewController.xib; sourceTree = "<group>"; };
+		C3A14D2E20DDA69900F4182E /* PaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewModel.swift; sourceTree = "<group>"; };
+		C3F1727120E44162004113AE /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		C3F1727220E44162004113AE /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		C3F1727520E44182004113AE /* ButtonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCellViewModel.swift; sourceTree = "<group>"; };
+		C3F1727720E44222004113AE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		C3F1727920E44368004113AE /* PharmacyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyTableViewCell.swift; sourceTree = "<group>"; };
+		C3F1727A20E44368004113AE /* PharmacyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyTableViewCell.xib; sourceTree = "<group>"; };
+		C3F6F3B320E69073009D08E1 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		C3F6F3B420E69073009D08E1 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		C3F6F3B720E69A81009D08E1 /* CartCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCellViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C34DED8820DD9A0B00B45325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34DED9C20DD9A0C00B45325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34DEDA720DD9A0C00B45325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C34DED8220DD9A0B00B45325 = {
+			isa = PBXGroup;
+			children = (
+				C34DED8D20DD9A0B00B45325 /* Farmacia */,
+				C34DEDA220DD9A0C00B45325 /* FarmaciaTests */,
+				C34DEDAD20DD9A0C00B45325 /* FarmaciaUITests */,
+				C34DED8C20DD9A0B00B45325 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C34DED8C20DD9A0B00B45325 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C34DED8B20DD9A0B00B45325 /* Farmacia.app */,
+				C34DED9F20DD9A0C00B45325 /* FarmaciaTests.xctest */,
+				C34DEDAA20DD9A0C00B45325 /* FarmaciaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C34DED8D20DD9A0B00B45325 /* Farmacia */ = {
+			isa = PBXGroup;
+			children = (
+				C34DED8E20DD9A0B00B45325 /* AppDelegate.swift */,
+				C3A14CF220DD9C6100F4182E /* Main Files */,
+				C3A14CF320DD9C6600F4182E /* Models */,
+				C3A14CF420DD9C8400F4182E /* Resources */,
+				C3A14CF520DD9C9B00F4182E /* UI */,
+				C3A14CF620DD9CC500F4182E /* Utilities */,
+				C3A14CF720DD9CD200F4182E /* ViewControllers */,
+				C3A14CF820DD9CF200F4182E /* ViewModels */,
+				C3A14CF920DD9D0400F4182E /* Views */,
+			);
+			path = Farmacia;
+			sourceTree = "<group>";
+		};
+		C34DEDA220DD9A0C00B45325 /* FarmaciaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C34DEDA320DD9A0C00B45325 /* FarmaciaTests.swift */,
+				C34DEDA520DD9A0C00B45325 /* Info.plist */,
+			);
+			path = FarmaciaTests;
+			sourceTree = "<group>";
+		};
+		C34DEDAD20DD9A0C00B45325 /* FarmaciaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C34DEDAE20DD9A0C00B45325 /* FarmaciaUITests.swift */,
+				C34DEDB020DD9A0C00B45325 /* Info.plist */,
+			);
+			path = FarmaciaUITests;
+			sourceTree = "<group>";
+		};
+		C3A14CF220DD9C6100F4182E /* Main Files */ = {
+			isa = PBXGroup;
+			children = (
+				C34DED9A20DD9A0C00B45325 /* Info.plist */,
+			);
+			path = "Main Files";
+			sourceTree = "<group>";
+		};
+		C3A14CF320DD9C6600F4182E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14CFA20DD9D5E00F4182E /* Pharmacy.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3A14CF420DD9C8400F4182E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C34DED9520DD9A0C00B45325 /* Assets.xcassets */,
+				C3A14D0020DD9E2300F4182E /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3A14CF520DD9C9B00F4182E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C34DED9220DD9A0B00B45325 /* Main.storyboard */,
+				C34DED9720DD9A0C00B45325 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C3A14CF620DD9CC500F4182E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14CFE20DD9DD500F4182E /* UIConstants.swift */,
+				C3A14CFC20DD9DAE00F4182E /* UIUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C3A14CF720DD9CD200F4182E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D2420DDA1D700F4182E /* BaseViewController.swift */,
+				C3A14D0420DD9F1100F4182E /* Cart */,
+				C3A14D0520DD9F1A00F4182E /* OrderConfirmation */,
+				C3A14D2820DDA4E000F4182E /* PaymentMethod */,
+				C3A14D0220DD9EF800F4182E /* Splash */,
+				C3A14D0320DD9F0300F4182E /* StoreList */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3A14CF820DD9CF200F4182E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D2620DDA23200F4182E /* BaseViewModel.swift */,
+				C3A14D1620DD9FC600F4182E /* Cart */,
+				C3F1726F20E440DD004113AE /* Cells */,
+				C3A14D1720DD9FCC00F4182E /* OrderConfirmation */,
+				C3A14D2D20DDA67700F4182E /* PaymentMethod */,
+				C3A14D1820DD9FD500F4182E /* Splash */,
+				C3A14D1920DD9FDC00F4182E /* StoreList */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C3A14CF920DD9D0400F4182E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D2320DDA12300F4182E /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3A14D0220DD9EF800F4182E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D0E20DD9F5F00F4182E /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C3A14D0320DD9F0300F4182E /* StoreList */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D1220DD9F6D00F4182E /* StoreListViewController.swift */,
+				C3A14D1320DD9F6D00F4182E /* StoreListViewController.xib */,
+			);
+			path = StoreList;
+			sourceTree = "<group>";
+		};
+		C3A14D0420DD9F1100F4182E /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D0620DD9F3E00F4182E /* CartViewController.swift */,
+				C3A14D0720DD9F3E00F4182E /* CartViewController.xib */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		C3A14D0520DD9F1A00F4182E /* OrderConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D0A20DD9F5100F4182E /* OrderConfirmationViewController.swift */,
+				C3A14D0B20DD9F5100F4182E /* OrderConfirmationViewController.xib */,
+			);
+			path = OrderConfirmation;
+			sourceTree = "<group>";
+		};
+		C3A14D1620DD9FC600F4182E /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D1B20DDA00A00F4182E /* CartViewModel.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		C3A14D1720DD9FCC00F4182E /* OrderConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OrderConfirmation;
+			sourceTree = "<group>";
+		};
+		C3A14D1820DD9FD500F4182E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D1F20DDA02E00F4182E /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C3A14D1920DD9FDC00F4182E /* StoreList */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D2120DDA03900F4182E /* StoreListViewModel.swift */,
+			);
+			path = StoreList;
+			sourceTree = "<group>";
+		};
+		C3A14D2320DDA12300F4182E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C3F1727720E44222004113AE /* BaseTableViewCell.swift */,
+				C3F1727020E44126004113AE /* ButtonCells */,
+				C3F6F3B220E69011009D08E1 /* CartCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C3A14D2820DDA4E000F4182E /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D2920DDA50D00F4182E /* PaymentMethodViewController.swift */,
+				C3A14D2A20DDA50D00F4182E /* PaymentMethodViewController.xib */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		C3A14D2D20DDA67700F4182E /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				C3A14D1D20DDA02000F4182E /* OrderConfirmationViewModel.swift */,
+				C3A14D2E20DDA69900F4182E /* PaymentMethodViewModel.swift */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		C3F1726F20E440DD004113AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C3F1727520E44182004113AE /* ButtonCellViewModel.swift */,
+				C38748B620E5788B000ABB83 /* PharmacyCellViewModel.swift */,
+				C3F6F3B720E69A81009D08E1 /* CartCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C3F1727020E44126004113AE /* ButtonCells */ = {
+			isa = PBXGroup;
+			children = (
+				C3F1727120E44162004113AE /* ButtonTableViewCell.swift */,
+				C3F1727220E44162004113AE /* ButtonTableViewCell.xib */,
+				C3F1727920E44368004113AE /* PharmacyTableViewCell.swift */,
+				C3F1727A20E44368004113AE /* PharmacyTableViewCell.xib */,
+			);
+			path = ButtonCells;
+			sourceTree = "<group>";
+		};
+		C3F6F3B220E69011009D08E1 /* CartCells */ = {
+			isa = PBXGroup;
+			children = (
+				C3F6F3B320E69073009D08E1 /* CartTableViewCell.swift */,
+				C3F6F3B420E69073009D08E1 /* CartTableViewCell.xib */,
+			);
+			path = CartCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C34DED8A20DD9A0B00B45325 /* Farmacia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C34DEDB320DD9A0C00B45325 /* Build configuration list for PBXNativeTarget "Farmacia" */;
+			buildPhases = (
+				C34DED8720DD9A0B00B45325 /* Sources */,
+				C34DED8820DD9A0B00B45325 /* Frameworks */,
+				C34DED8920DD9A0B00B45325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Farmacia;
+			productName = Farmacia;
+			productReference = C34DED8B20DD9A0B00B45325 /* Farmacia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C34DED9E20DD9A0C00B45325 /* FarmaciaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C34DEDB620DD9A0C00B45325 /* Build configuration list for PBXNativeTarget "FarmaciaTests" */;
+			buildPhases = (
+				C34DED9B20DD9A0C00B45325 /* Sources */,
+				C34DED9C20DD9A0C00B45325 /* Frameworks */,
+				C34DED9D20DD9A0C00B45325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C34DEDA120DD9A0C00B45325 /* PBXTargetDependency */,
+			);
+			name = FarmaciaTests;
+			productName = FarmaciaTests;
+			productReference = C34DED9F20DD9A0C00B45325 /* FarmaciaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C34DEDA920DD9A0C00B45325 /* FarmaciaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C34DEDB920DD9A0C00B45325 /* Build configuration list for PBXNativeTarget "FarmaciaUITests" */;
+			buildPhases = (
+				C34DEDA620DD9A0C00B45325 /* Sources */,
+				C34DEDA720DD9A0C00B45325 /* Frameworks */,
+				C34DEDA820DD9A0C00B45325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C34DEDAC20DD9A0C00B45325 /* PBXTargetDependency */,
+			);
+			name = FarmaciaUITests;
+			productName = FarmaciaUITests;
+			productReference = C34DEDAA20DD9A0C00B45325 /* FarmaciaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C34DED8320DD9A0B00B45325 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Sofía Hernández";
+				TargetAttributes = {
+					C34DED8A20DD9A0B00B45325 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					C34DED9E20DD9A0C00B45325 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = C34DED8A20DD9A0B00B45325;
+					};
+					C34DEDA920DD9A0C00B45325 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = C34DED8A20DD9A0B00B45325;
+					};
+				};
+			};
+			buildConfigurationList = C34DED8620DD9A0B00B45325 /* Build configuration list for PBXProject "Farmacia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C34DED8220DD9A0B00B45325;
+			productRefGroup = C34DED8C20DD9A0B00B45325 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C34DED8A20DD9A0B00B45325 /* Farmacia */,
+				C34DED9E20DD9A0C00B45325 /* FarmaciaTests */,
+				C34DEDA920DD9A0C00B45325 /* FarmaciaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C34DED8920DD9A0B00B45325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A14D0D20DD9F5100F4182E /* OrderConfirmationViewController.xib in Resources */,
+				C34DED9920DD9A0C00B45325 /* LaunchScreen.storyboard in Resources */,
+				C3A14D2C20DDA50D00F4182E /* PaymentMethodViewController.xib in Resources */,
+				C3A14D0120DD9E2300F4182E /* Localizable.strings in Resources */,
+				C3F1727420E44162004113AE /* ButtonTableViewCell.xib in Resources */,
+				C3A14D1520DD9F6D00F4182E /* StoreListViewController.xib in Resources */,
+				C3F1727C20E44368004113AE /* PharmacyTableViewCell.xib in Resources */,
+				C3F6F3B620E69073009D08E1 /* CartTableViewCell.xib in Resources */,
+				C34DED9620DD9A0C00B45325 /* Assets.xcassets in Resources */,
+				C3A14D0920DD9F3E00F4182E /* CartViewController.xib in Resources */,
+				C34DED9420DD9A0B00B45325 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34DED9D20DD9A0C00B45325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34DEDA820DD9A0C00B45325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C34DED8720DD9A0B00B45325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A14D2520DDA1D700F4182E /* BaseViewController.swift in Sources */,
+				C3A14D2220DDA03900F4182E /* StoreListViewModel.swift in Sources */,
+				C3A14D2F20DDA69900F4182E /* PaymentMethodViewModel.swift in Sources */,
+				C3F1727820E44222004113AE /* BaseTableViewCell.swift in Sources */,
+				C3A14D1420DD9F6D00F4182E /* StoreListViewController.swift in Sources */,
+				C3F6F3B520E69073009D08E1 /* CartTableViewCell.swift in Sources */,
+				C3A14D2720DDA23200F4182E /* BaseViewModel.swift in Sources */,
+				C3A14CFB20DD9D5E00F4182E /* Pharmacy.swift in Sources */,
+				C38748B720E5788B000ABB83 /* PharmacyCellViewModel.swift in Sources */,
+				C3A14D1E20DDA02000F4182E /* OrderConfirmationViewModel.swift in Sources */,
+				C3A14CFD20DD9DAE00F4182E /* UIUtilities.swift in Sources */,
+				C3A14D2020DDA02E00F4182E /* SplashViewModel.swift in Sources */,
+				C3A14D0C20DD9F5100F4182E /* OrderConfirmationViewController.swift in Sources */,
+				C3A14D0820DD9F3E00F4182E /* CartViewController.swift in Sources */,
+				C3F6F3B820E69A81009D08E1 /* CartCellViewModel.swift in Sources */,
+				C34DED8F20DD9A0B00B45325 /* AppDelegate.swift in Sources */,
+				C3A14D1C20DDA00A00F4182E /* CartViewModel.swift in Sources */,
+				C3A14D1020DD9F5F00F4182E /* SplashViewController.swift in Sources */,
+				C3A14D2B20DDA50D00F4182E /* PaymentMethodViewController.swift in Sources */,
+				C3A14CFF20DD9DD500F4182E /* UIConstants.swift in Sources */,
+				C3F1727620E44182004113AE /* ButtonCellViewModel.swift in Sources */,
+				C3F1727B20E44368004113AE /* PharmacyTableViewCell.swift in Sources */,
+				C3F1727320E44162004113AE /* ButtonTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34DED9B20DD9A0C00B45325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34DEDA420DD9A0C00B45325 /* FarmaciaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34DEDA620DD9A0C00B45325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34DEDAF20DD9A0C00B45325 /* FarmaciaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C34DEDA120DD9A0C00B45325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C34DED8A20DD9A0B00B45325 /* Farmacia */;
+			targetProxy = C34DEDA020DD9A0C00B45325 /* PBXContainerItemProxy */;
+		};
+		C34DEDAC20DD9A0C00B45325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C34DED8A20DD9A0B00B45325 /* Farmacia */;
+			targetProxy = C34DEDAB20DD9A0C00B45325 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C34DED9220DD9A0B00B45325 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C34DED9320DD9A0B00B45325 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C34DED9720DD9A0C00B45325 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C34DED9820DD9A0C00B45325 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C34DEDB120DD9A0C00B45325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C34DEDB220DD9A0C00B45325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C34DEDB420DD9A0C00B45325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Farmacia/Main Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sofia.Farmacia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C34DEDB520DD9A0C00B45325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Farmacia/Main Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sofia.Farmacia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C34DEDB720DD9A0C00B45325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FarmaciaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sofia.FarmaciaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farmacia.app/Farmacia";
+			};
+			name = Debug;
+		};
+		C34DEDB820DD9A0C00B45325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FarmaciaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sofia.FarmaciaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farmacia.app/Farmacia";
+			};
+			name = Release;
+		};
+		C34DEDBA20DD9A0C00B45325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FarmaciaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sofia.FarmaciaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Farmacia;
+			};
+			name = Debug;
+		};
+		C34DEDBB20DD9A0C00B45325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FarmaciaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sofia.FarmaciaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Farmacia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C34DED8620DD9A0B00B45325 /* Build configuration list for PBXProject "Farmacia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34DEDB120DD9A0C00B45325 /* Debug */,
+				C34DEDB220DD9A0C00B45325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C34DEDB320DD9A0C00B45325 /* Build configuration list for PBXNativeTarget "Farmacia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34DEDB420DD9A0C00B45325 /* Debug */,
+				C34DEDB520DD9A0C00B45325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C34DEDB620DD9A0C00B45325 /* Build configuration list for PBXNativeTarget "FarmaciaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34DEDB720DD9A0C00B45325 /* Debug */,
+				C34DEDB820DD9A0C00B45325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C34DEDB920DD9A0C00B45325 /* Build configuration list for PBXNativeTarget "FarmaciaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34DEDBA20DD9A0C00B45325 /* Debug */,
+				C34DEDBB20DD9A0C00B45325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C34DED8320DD9A0B00B45325 /* Project object */;
+}
